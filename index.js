@@ -24,10 +24,10 @@ wss.on("connection", function(ws) {
 		ws.send(JSON.stringify(new Date()), function() {  })
 	}, 5000);
 
-	console.log("websocket connection open");
+	console.log("websocket connection open!");
 
 	ws.on("close", function() {
-		console.log("websocket connection close");
+		console.log("websocket connection closed!");
 		clearInterval(id)
 	})
 });
