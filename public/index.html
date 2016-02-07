@@ -18,7 +18,15 @@
     <script src="index.js" type="application/javascript"></script>
 </head>
 <body>
-<h1 class="header">Pings</h1>
+<h1>Chat room</h1>
+<h3>You are <span class="you-id"></span></h3>
+<div style="margin-bottom: 12px;">
+    Connection status: <span id="status">Connecting...</span>
+</div>
+<div style="margin-bottom: 12px;">
+    <input type="text" name="message" id="message" />
+    <button type="button" onclick="handleSendMessage()">Send</button>
+</div>
 <ul class="log"></ul>
 </body>
 </html>
